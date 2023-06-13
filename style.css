@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(37, 35, 35);
+}
+
+.container {
+    margin: 5PX;
+    height: 98vh;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    column-gap: 10px;
+}
+
+#myCanvas {
+    grid-column-start: 2;
+    grid-column-end: 18;
+    background-color: #fff;
+    box-shadow: 2px 5px 6px 9px black;
+    cursor: crosshair;
+}
+
+
+
+.tools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 2px 5px 6px 9px black;
+}
+
+.tools input {
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 80%;
+    height: 5%;
+}
+
+.btn {
+    height: 5%;
+    cursor: pointer;
+    width: 80%;
+    margin-top: 10px;
+}
+
+
+.pen_size {
+
+    display: none;
+    height:30px ;
+}
+
+.value {
+    font-weight: bold;
+    cursor: pointer;
+    height: 5%;
+    width: 100%;
+    margin-top: 10px;
+}

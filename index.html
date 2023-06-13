@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/6b896963d9.js" crossorigin="anonymous"></script>
+    <title>Paint App</title>
+</head>
+
+<body>
+    <div class="container">
+        <span class="tools">
+            <input type="color" id="colorBox">
+            <div class="slider" style="text-align: center;">
+                <button class="value" onclick="show()">Size</button>
+                <input type="number" placeholder="" value="10" min="1" max="100" class="pen_size">
+            </div>
+            <!-- <button title="Undo" type="button" class="btn"><i class="fa-solid fa-reply"></i></button>
+            <button title="Clear" type="button" class="btn"><i class="fa-solid fa-trash"></i></button> -->
+            <button title="Dounload" onclick="download()" class="btn">Download</button>
+        </span>
+
+        <canvas id="myCanvas">
+
+        </canvas>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
